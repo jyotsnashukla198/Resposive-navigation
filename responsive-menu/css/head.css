@@ -1,0 +1,148 @@
+body{
+	margin:0;
+	width:100%;
+	float:left;
+}
+.container{
+	margin:0 auto;
+	width:100%;
+	float:left;
+}
+@font-face {
+    font-family: Proxima-nova;
+    src: url('../fonts/Proxima-nova.ttf');
+}
+header{
+	width:100%;
+	float:left;
+	clear:both;
+	background:#0B3B17;
+}
+.menu_ul{
+	list-style: none;
+	padding:0;
+
+}
+.menu_li{
+	display:inline-block;
+}
+.menu-link{
+	padding: 0.5em 3.8em 0.5em 4em;
+   text-decoration: none;
+   font: 22px "Proxima-nova";
+   color: #fff;
+   text-transform:capitalize;
+}
+#pull{
+	display:none;
+}
+.menu-div{
+	position:absolute;
+	width:100%;
+	background:#04B486;
+	margin-top:0.7em;
+	left:0;
+	display:none;
+	z-index: 1055;
+	overflow:hidden;
+	height:auto;
+}
+.submenu-left,.submenu-middle{
+border-right:1px solid #fff;	
+}
+.submenu-left,.submenu-middle,.submenu-right{
+	float:left;
+	width:32%;
+}
+.menu-div h4{
+	color:#FE2E2E;
+	margin-left:1em;
+	font:22px "Proxima-nova";
+}
+.menu-div ul{
+	list-style: none;
+}
+.submenu-left a,.submenu-middle a,.submenu-right a{
+	text-decoration:none;
+	color:#fff;
+	font:20px "Proxima-nova";
+	padding:1.5em;
+	text-transform:capitalize;
+}
+.sub-li{
+	padding:0.5em;
+}
+.active{
+background:#04B486;;
+}
+@media screen and (max-width:1240px) { 
+.menu-link{
+	padding: 0.5em 2em 0.5em 2em;
+}
+	
+}
+@media screen and (max-width:780px) { 
+body{
+	font-size: 0.9em;
+}
+.menu-link{
+	padding: 0.5em 1.2em 0.5em 1.2em;
+}
+.submenu-left a, .submenu-middle a, .submenu-right a{
+	padding:1.5em 0.5em;
+}
+	
+}
+@media screen and (max-width:640px) { 
+body{
+	font-size: 0.8em;
+}
+
+.submenu-left,.submenu-middle,.submenu-right{
+	float:none;
+	width:100%;
+}	
+.menu-link{
+	padding: 0.5em 0.8em 0.5em 0.8em;
+}
+.sub-menu{
+	display:none;
+}
+.menu-div h4{
+cursor:pointer;
+}
+.menu_ul{
+	height:auto;
+	width:100%;
+	display:none;
+}
+.menu_ul li{
+	width:95%;
+	display:block;
+	float:left;
+	position:relative;
+	padding: 1em 2% 1em 3%;
+}
+.menu-div{
+	position:static;
+}
+.menu-link{
+	font-size:26px;
+}
+#pull {  
+        display: block;   
+        width: 90%;  
+        position:static; 
+        font: 28px "Proxima-nova";
+        color: #fff;
+       text-transform:capitalize; 
+       text-decoration:none;
+      vertical-align: baseline;
+      padding:1em 0em 1em 0em;
+      margin-left:1em;
+    } 
+    #pull img{
+    	float:right;
+    } 
+	
+}
